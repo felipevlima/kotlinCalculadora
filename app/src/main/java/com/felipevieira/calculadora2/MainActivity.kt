@@ -3,7 +3,6 @@ package com.felipevieira.calculadora2
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.app.AlertDialog
-import android.util.Log
 import kotlinx.android.synthetic.main.activity_main.*
 import net.objecthunter.exp4j.ExpressionBuilder
 
@@ -46,8 +45,8 @@ class MainActivity : AppCompatActivity() {
                     viewexpression.text = result.toString()
 
             } catch (e:Exception) {
-                //POP UP ALARM
-                //Log.d("Error", " message : " + e.message)
+                //POP UP Warning
+
                 //System.out.println("Error Na questão")
 
                 val builder = AlertDialog.Builder(this)
